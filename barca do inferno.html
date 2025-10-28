@@ -1,0 +1,2053 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto da Barca do Inferno - Guia Completo para o 9º Ano</title>
+    <style>
+        :root {
+  /* Primitive Color Tokens */
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+
+  /* RGB versions for opacity control */
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+  --color-orange-400-rgb: 230, 129, 97;
+
+  /* Background color tokens (Light Mode) */
+  --color-bg-1: rgba(59, 130, 246, 0.08);
+  --color-bg-2: rgba(245, 158, 11, 0.08);
+  --color-bg-3: rgba(34, 197, 94, 0.08);
+  --color-bg-4: rgba(239, 68, 68, 0.08);
+  --color-bg-5: rgba(147, 51, 234, 0.08);
+  --color-bg-6: rgba(249, 115, 22, 0.08);
+  --color-bg-7: rgba(236, 72, 153, 0.08);
+  --color-bg-8: rgba(6, 182, 212, 0.08);
+
+  /* Semantic Color Tokens (Light Mode) */
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+  --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+
+  /* Common style patterns */
+  --focus-ring: 0 0 0 3px var(--color-focus-ring);
+  --focus-outline: 2px solid var(--color-primary);
+  --status-bg-opacity: 0.15;
+  --status-border-opacity: 0.25;
+  --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+
+  /* RGB versions for opacity control */
+  --color-success-rgb: 33, 128, 141;
+  --color-error-rgb: 192, 21, 47;
+  --color-warning-rgb: 168, 75, 47;
+  --color-info-rgb: 98, 108, 113;
+
+  /* Typography */
+  --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, monospace;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --letter-spacing-tight: -0.01em;
+
+  /* Spacing */
+  --space-0: 0;
+  --space-1: 1px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04),
+    0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04),
+    0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+
+  /* Animation */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-teal-300-rgb: 50, 184, 198;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+
+    --color-bg-1: rgba(29, 78, 216, 0.15);
+    --color-bg-2: rgba(180, 83, 9, 0.15);
+    --color-bg-3: rgba(21, 128, 61, 0.15);
+    --color-bg-4: rgba(185, 28, 28, 0.15);
+    --color-bg-5: rgba(107, 33, 168, 0.15);
+    --color-bg-6: rgba(194, 65, 12, 0.15);
+    --color-bg-7: rgba(190, 24, 93, 0.15);
+    --color-bg-8: rgba(8, 145, 178, 0.15);
+
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-primary-hover: var(--color-teal-400);
+    --color-primary-active: var(--color-teal-800);
+    --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+    --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+    --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-error: var(--color-red-400);
+    --color-success: var(--color-teal-300);
+    --color-warning: var(--color-orange-400);
+    --color-info: var(--color-gray-300);
+    --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+    --color-btn-primary-text: var(--color-slate-900);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+    --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    --color-select-caret: rgba(var(--color-gray-200-rgb), 0.8);
+
+    --color-success-rgb: var(--color-teal-300-rgb);
+    --color-error-rgb: var(--color-red-400-rgb);
+    --color-warning-rgb: var(--color-orange-400-rgb);
+    --color-info-rgb: var(--color-gray-300-rgb);
+  }
+}
+
+@font-face {
+  font-family: 'FKGroteskNeue';
+  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2')
+    format('woff2');
+}
+
+html {
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+}
+h2 {
+  font-size: var(--font-size-3xl);
+}
+h3 {
+  font-size: var(--font-size-2xl);
+}
+h4 {
+  font-size: var(--font-size-xl);
+}
+h5 {
+  font-size: var(--font-size-lg);
+}
+h6 {
+  font-size: var(--font-size-md);
+}
+
+p {
+  margin: 0 0 var(--space-16) 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-standard);
+  border: none;
+  text-decoration: none;
+  position: relative;
+}
+
+.btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+}
+
+.btn--primary:hover {
+  background: var(--color-primary-hover);
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+  color: var(--color-text);
+}
+
+.btn--secondary:hover {
+  background: var(--color-secondary-hover);
+}
+
+.btn--sm {
+  padding: var(--space-6) var(--space-12);
+  font-size: var(--font-size-sm);
+}
+
+.card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-20);
+  margin-bottom: var(--space-16);
+}
+
+/* Custom Styles */
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-20);
+}
+
+.header {
+    text-align: center;
+    padding: var(--space-32) var(--space-20);
+    background: var(--color-bg-1);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-24);
+}
+
+.header h1 {
+    margin-bottom: var(--space-12);
+}
+
+.header p {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-lg);
+}
+
+.nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-8);
+    margin-bottom: var(--space-24);
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: var(--space-8);
+}
+
+.nav-tab {
+    padding: var(--space-10) var(--space-16);
+    background: transparent;
+    border: none;
+    border-radius: var(--radius-base) var(--radius-base) 0 0;
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-secondary);
+    transition: all var(--duration-fast);
+}
+
+.nav-tab:hover {
+    background: var(--color-secondary);
+    color: var(--color-text);
+}
+
+.nav-tab.active {
+    background: var(--color-primary);
+    color: var(--color-btn-primary-text);
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: var(--color-secondary);
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-24);
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--color-primary);
+    transition: width var(--duration-normal);
+}
+
+.character-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-card-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-20);
+    margin-bottom: var(--space-16);
+}
+
+.character-card h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-12);
+}
+
+.character-detail {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: var(--space-8);
+    margin-bottom: var(--space-8);
+    padding: var(--space-8);
+    border-left: 3px solid var(--color-border);
+    background: var(--color-bg-2);
+}
+
+.character-detail strong {
+    color: var(--color-text);
+}
+
+.resource-example {
+    background: var(--color-bg-3);
+    padding: var(--space-12);
+    border-radius: var(--radius-base);
+    margin: var(--space-8) 0;
+    border-left: 4px solid var(--color-primary);
+}
+
+.quiz-question {
+    background: var(--color-surface);
+    padding: var(--space-20);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-card-border);
+    margin-bottom: var(--space-16);
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+    margin-top: var(--space-12);
+}
+
+.quiz-option {
+    padding: var(--space-12);
+    background: var(--color-secondary);
+    border: 2px solid transparent;
+    border-radius: var(--radius-base);
+    cursor: pointer;
+    transition: all var(--duration-fast);
+}
+
+.quiz-option:hover {
+    background: var(--color-secondary-hover);
+    border-color: var(--color-primary);
+}
+
+.quiz-option.correct {
+    background: rgba(var(--color-success-rgb), 0.15);
+    border-color: var(--color-success);
+}
+
+.quiz-option.incorrect {
+    background: rgba(var(--color-error-rgb), 0.15);
+    border-color: var(--color-error);
+}
+
+.feedback {
+    margin-top: var(--space-12);
+    padding: var(--space-12);
+    border-radius: var(--radius-base);
+    font-weight: var(--font-weight-medium);
+}
+
+.feedback.correct {
+    background: rgba(var(--color-success-rgb), 0.15);
+    color: var(--color-success);
+}
+
+.feedback.incorrect {
+    background: rgba(var(--color-error-rgb), 0.15);
+    color: var(--color-error);
+}
+
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--space-16) 0;
+}
+
+.summary-table th,
+.summary-table td {
+    padding: var(--space-12);
+    text-align: left;
+    border: 1px solid var(--color-border);
+}
+
+.summary-table th {
+    background: var(--color-primary);
+    color: var(--color-btn-primary-text);
+    font-weight: var(--font-weight-semibold);
+}
+
+.summary-table tr:nth-child(even) {
+    background: var(--color-bg-1);
+}
+
+.badge {
+    display: inline-block;
+    padding: var(--space-4) var(--space-8);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    margin: var(--space-4);
+}
+
+.badge-inferno {
+    background: rgba(var(--color-error-rgb), 0.15);
+    color: var(--color-error);
+}
+
+.badge-paraiso {
+    background: rgba(var(--color-success-rgb), 0.15);
+    color: var(--color-success);
+}
+
+.badge-nobreza {
+    background: var(--color-bg-5);
+    color: var(--color-text);
+}
+
+.badge-clero {
+    background: var(--color-bg-6);
+    color: var(--color-text);
+}
+
+.badge-povo {
+    background: var(--color-bg-7);
+    color: var(--color-text);
+}
+
+.scrolltop-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-full);
+    background: var(--color-primary);
+    color: var(--color-btn-primary-text);
+    border: none;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    font-size: var(--font-size-xl);
+}
+
+.scrolltop-btn.visible {
+    display: flex;
+}
+
+.highlight-box {
+    background: var(--color-bg-4);
+    padding: var(--space-16);
+    border-radius: var(--radius-base);
+    border-left: 4px solid var(--color-warning);
+    margin: var(--space-16) 0;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+}
+
+@media (max-width: 768px) {
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-tabs {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+    
+    .character-detail {
+        grid-template-columns: 1fr;
+    }
+}
+
+.exam-tip {
+    background: var(--color-bg-5);
+    padding: var(--space-16);
+    border-radius: var(--radius-base);
+    margin: var(--space-12) 0;
+    border-left: 4px solid var(--color-info);
+}
+
+.exam-tip::before {
+    content: "💡 ";
+    font-size: var(--font-size-xl);
+}
+
+.stats-container {
+    display: flex;
+    gap: var(--space-16);
+    margin: var(--space-20) 0;
+}
+
+.stat-box {
+    flex: 1;
+    background: var(--color-surface);
+    padding: var(--space-16);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-card-border);
+    text-align: center;
+}
+
+.stat-box .number {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+}
+
+.stat-box .label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-top: var(--space-4);
+}
+
+.checklist {
+    list-style: none;
+    padding: 0;
+}
+
+.checklist li {
+    padding: var(--space-8);
+    margin: var(--space-8) 0;
+    background: var(--color-bg-3);
+    border-radius: var(--radius-base);
+    cursor: pointer;
+    transition: all var(--duration-fast);
+}
+
+.checklist li::before {
+    content: "☐ ";
+    margin-right: var(--space-8);
+    font-size: var(--font-size-xl);
+}
+
+.checklist li.checked::before {
+    content: "☑ ";
+}
+
+.checklist li.checked {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+ul, ol {
+    margin: var(--space-12) 0;
+    padding-left: var(--space-24);
+}
+
+li {
+    margin: var(--space-8) 0;
+}
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1>📚 Auto da Barca do Inferno</h1>
+            <p>Guia Completo de Estudo para o 9º Ano</p>
+            <p style="font-size: var(--font-size-base); margin-top: var(--space-8);">Gil Vicente (1517)</p>
+        </header>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar" style="width: 0%"></div>
+        </div>
+
+        <nav class="nav-tabs" id="navTabs">
+            <button class="nav-tab active" data-section="inicio">🏠 Início</button>
+            <button class="nav-tab" data-section="contexto">📜 Contexto</button>
+            <button class="nav-tab" data-section="analise">📖 Análise</button>
+            <button class="nav-tab" data-section="personagens">🎭 Personagens</button>
+            <button class="nav-tab" data-section="recursos">✨ Recursos</button>
+            <button class="nav-tab" data-section="temas">💭 Temas</button>
+            <button class="nav-tab" data-section="exercicios">📝 Exercícios</button>
+            <button class="nav-tab" data-section="sintese">📊 Síntese</button>
+            <button class="nav-tab" data-section="exame">🎓 Exame</button>
+        </nav>
+
+        <!-- INÍCIO -->
+        <section class="section active" id="inicio">
+            <div class="card">
+                <h2>Bem-vindo ao Guia Completo</h2>
+                <p>Esta aplicação foi desenvolvida para te ajudar a compreender profundamente o <strong>Auto da Barca do Inferno</strong> e preparar-te para o exame nacional do 9º ano.</p>
+                
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <div class="number">13</div>
+                        <div class="label">Personagens</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">9</div>
+                        <div class="label">Secções</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">20+</div>
+                        <div class="label">Exercícios</div>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: var(--space-24); margin-bottom: var(--space-16);">Como usar este guia:</h3>
+                <ol>
+                    <li><strong>Navega pelas secções</strong> usando o menu acima</li>
+                    <li><strong>Estuda cada tema</strong> de forma progressiva</li>
+                    <li><strong>Realiza os exercícios</strong> para consolidar conhecimentos</li>
+                    <li><strong>Consulta a síntese</strong> para revisões rápidas</li>
+                    <li><strong>Pratica com questões de exame</strong> para te preparares</li>
+                </ol>
+
+                <div class="highlight-box">
+                    <h4>📌 Sugestão de Estudo</h4>
+                    <p>Recomendamos que sigas a ordem das secções para uma aprendizagem estruturada. Cada secção complementa a anterior!</p>
+                </div>
+
+                <h3 style="margin-top: var(--space-24); margin-bottom: var(--space-16);">O que vais encontrar:</h3>
+                <div class="two-column">
+                    <div class="card">
+                        <h4>📚 Conteúdo Teórico</h4>
+                        <ul>
+                            <li>Contexto histórico e cultural</li>
+                            <li>Análise detalhada da obra</li>
+                            <li>Caracterização das personagens</li>
+                            <li>Recursos expressivos</li>
+                            <li>Temas e valores</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>🎯 Prática</h4>
+                        <ul>
+                            <li>Exercícios interativos</li>
+                            <li>Questões de exame</li>
+                            <li>Quadros síntese</li>
+                            <li>Dicas de estudo</li>
+                            <li>Feedback imediato</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTEXTO -->
+        <section class="section" id="contexto">
+            <div class="card">
+                <h2>📜 Contextualização Histórica</h2>
+                
+                <h3>Gil Vicente (c. 1465 - c. 1536)</h3>
+                <p>Gil Vicente é considerado o <strong>pai do teatro português</strong>. Viveu durante os reinados de D. João II, D. Manuel I e D. João III, um período marcado pelos Descobrimentos e pela transição entre a Idade Média e o Renascimento.</p>
+                
+                <div class="character-detail">
+                    <strong>Época:</strong>
+                    <span>Século XVI (a obra foi representada em 1517)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Reinado:</strong>
+                    <span>D. Manuel I (1495-1521)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Contexto:</strong>
+                    <span>Descobrimentos Portugueses, Renascimento, expansão marítima</span>
+                </div>
+
+                <h3 style="margin-top: var(--space-24);">Teatro Medieval Português</h3>
+                <p>O <strong>Auto da Barca do Inferno</strong> pertence ao género literário do <strong>auto de moralidade</strong>, característico do teatro medieval. Este tipo de teatro tinha uma função essencialmente didática e moralizadora.</p>
+
+                <h4>Características do Auto de Moralidade:</h4>
+                <ul>
+                    <li>🎭 <strong>Alegoria:</strong> Personagens representam conceitos abstratos (Bem, Mal, vícios, virtudes)</li>
+                    <li>📖 <strong>Função didática:</strong> Ensinar valores morais e religiosos</li>
+                    <li>⚖️ <strong>Julgamento moral:</strong> As personagens são julgadas pelos seus atos em vida</li>
+                    <li>😂 <strong>Crítica social:</strong> Satírica e cómica, visando corrigir comportamentos</li>
+                    <li>🎪 <strong>Representação:</strong> Destinava-se a ser representado em espaços públicos e na corte</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <h4>O Século XVI em Portugal</h4>
+                    <p>Portugal vivia um período de grande riqueza e expansão. As descobertas marítimas trouxeram prosperidade, mas também corrupção e desigualdades sociais. Gil Vicente critica precisamente estes vícios da sociedade portuguesa do seu tempo.</p>
+                </div>
+
+                <h3 style="margin-top: var(--space-24);">A Trilogia das Barcas</h3>
+                <p>O <strong>Auto da Barca do Inferno</strong> é a primeira peça da chamada <em>Trilogia das Barcas</em>, que inclui também:</p>
+                <ul>
+                    <li><strong>Auto da Barca do Inferno</strong> (1517) - a que estudamos</li>
+                    <li><strong>Auto da Barca do Purgatório</strong> (1518)</li>
+                    <li><strong>Auto da Barca da Glória</strong> (1519)</li>
+                </ul>
+
+                <div class="exam-tip">
+                    <strong>Dica de Exame:</strong> É importante saberes que Gil Vicente viveu no reinado de D. Manuel I e que a obra foi escrita no século XVI, em plenos Descobrimentos Portugueses.
+                </div>
+            </div>
+        </section>
+
+        <!-- ANÁLISE -->
+        <section class="section" id="analise">
+            <div class="card">
+                <h2>📖 Análise da Obra</h2>
+                
+                <h3>Género Literário</h3>
+                <div class="character-detail">
+                    <strong>Género:</strong>
+                    <span>Auto de moralidade</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Classificação:</strong>
+                    <span>Teatro medieval português</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Forma:</strong>
+                    <span>Texto dramático em verso (redondilha maior)</span>
+                </div>
+
+                <h3 style="margin-top: var(--space-24);">Estrutura da Peça</h3>
+                <p>A obra apresenta uma <strong>estrutura simétrica e repetitiva</strong>:</p>
+                <ol>
+                    <li><strong>Chegada da personagem</strong> ao cais (acabou de morrer)</li>
+                    <li><strong>Diálogo com o Diabo</strong> (arrais da Barca do Inferno)</li>
+                    <li><strong>Diálogo com o Anjo</strong> (arrais da Barca da Glória)</li>
+                    <li><strong>Julgamento</strong> baseado nos atos praticados em vida</li>
+                    <li><strong>Destino final</strong> (Inferno ou Paraíso)</li>
+                </ol>
+
+                <h3 style="margin-top: var(--space-24);">Espaço Cénico</h3>
+                <p>A ação decorre num <strong>cais alegórico</strong> onde se encontram duas barcas:</p>
+                <div class="two-column">
+                    <div class="card">
+                        <h4>🔥 Barca do Inferno</h4>
+                        <ul>
+                            <li><strong>Arrais:</strong> O Diabo</li>
+                            <li><strong>Destino:</strong> Ilha Perdida (Inferno)</li>
+                            <li><strong>Características:</strong> Sardónica, satírica</li>
+                            <li><strong>Maioria:</strong> Quase todas as personagens</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>☁️ Barca da Glória</h4>
+                        <ul>
+                            <li><strong>Arrais:</strong> O Anjo</li>
+                            <li><strong>Destino:</strong> Paraíso</li>
+                            <li><strong>Características:</strong> Austera, justa</li>
+                            <li><strong>Minoria:</strong> Apenas o Parvo e os Cavaleiros</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: var(--space-24);">Tempo</h3>
+                <p>O tempo é <strong>atemporal</strong> - representa o momento da morte, quando a alma é julgada. Não há indicações temporais concretas, o que reforça o carácter alegórico da obra.</p>
+
+                <h3 style="margin-top: var(--space-24);">Tema Central</h3>
+                <div class="highlight-box">
+                    <h4>⚖️ Justiça Divina e Julgamento da Alma</h4>
+                    <p>O tema central é o <strong>julgamento das almas após a morte</strong> e a <strong>justiça divina</strong> que condena os vícios e premia as virtudes. Cada personagem é julgada de acordo com os seus atos em vida.</p>
+                </div>
+
+                <h3 style="margin-top: var(--space-24);">Intenção Moralizadora</h3>
+                <p>Gil Vicente pretende:</p>
+                <ul>
+                    <li>🎯 <strong>Criticar os vícios</strong> da sociedade portuguesa do século XVI</li>
+                    <li>📢 <strong>Denunciar a corrupção</strong> das classes privilegiadas</li>
+                    <li>⛪ <strong>Combater a hipocrisia religiosa</strong></li>
+                    <li>💡 <strong>Alertar</strong> para as consequências dos maus atos</li>
+                    <li>✨ <strong>Ensinar valores morais</strong> através do teatro</li>
+                </ul>
+
+                <h3 style="margin-top: var(--space-24);">Alegoria e Simbolismo</h3>
+                <p>A obra é profundamente <strong>alegórica</strong>:</p>
+                <ul>
+                    <li><strong>As barcas</strong> representam o destino da alma (salvação ou condenação)</li>
+                    <li><strong>O cais</strong> representa o momento da morte e do julgamento</li>
+                    <li><strong>Os símbolos cénicos</strong> que as personagens trazem representam os seus vícios e pecados</li>
+                    <li><strong>O Diabo e o Anjo</strong> personificam o Mal e o Bem</li>
+                </ul>
+
+                <div class="exam-tip">
+                    <strong>Dica de Exame:</strong> É fundamental saberes explicar a alegoria da obra e identificar os símbolos cénicos de cada personagem.
+                </div>
+            </div>
+        </section>
+
+        <!-- PERSONAGENS -->
+        <section class="section" id="personagens">
+            <div class="card">
+                <h2>🎭 Personagens</h2>
+                <p>Análise detalhada de todas as personagens da obra. Cada uma representa um grupo social ou um vício específico.</p>
+            </div>
+
+            <!-- Diabo -->
+            <div class="character-card">
+                <h3>😈 Diabo</h3>
+                <span class="badge badge-inferno">Personagem Alegórica</span>
+                
+                <div class="character-detail">
+                    <strong>Função:</strong>
+                    <span>Arrais da Barca do Inferno</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Caracterização:</strong>
+                    <span>Sarcástico, irónico, zombeteiro, conhecedor dos vícios humanos</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Linguagem:</strong>
+                    <span>Agressiva, crítica, por vezes chocante. Usa ironia constantemente.</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Simbolismo:</strong>
+                    <span>Representa o Mal, a condenação eterna, a punição pelos pecados</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Papel na obra:</strong>
+                    <span>Convida todas as personagens para a sua barca, expõe os seus vícios e pecados com sarcasmo</span>
+                </div>
+            </div>
+
+            <!-- Anjo -->
+            <div class="character-card">
+                <h3>👼 Anjo</h3>
+                <span class="badge badge-paraiso">Personagem Alegórica</span>
+                
+                <div class="character-detail">
+                    <strong>Função:</strong>
+                    <span>Arrais da Barca da Glória (Paraíso)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Caracterização:</strong>
+                    <span>Sóbrio, justo, inflexível no julgamento, austero</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Linguagem:</strong>
+                    <span>Calma, austera, sentenciosa. Representa a justiça divina.</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Simbolismo:</strong>
+                    <span>Representa o Bem, a salvação eterna, a recompensa pelas virtudes</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Papel na obra:</strong>
+                    <span>Recusa a entrada na sua barca aos pecadores, aceitando apenas os virtuosos</span>
+                </div>
+            </div>
+
+            <!-- Fidalgo -->
+            <div class="character-card">
+                <h3>👑 Fidalgo (D. Anrique)</h3>
+                <span class="badge badge-nobreza">Nobreza</span>
+                <span class="badge badge-inferno">Inferno</span>
+                
+                <div class="character-detail">
+                    <strong>Classe Social:</strong>
+                    <span>Nobreza - representa a aristocracia</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Símbolos Cénicos:</strong>
+                    <span>Pajem (criado), cadeira de espaldas (ostentação), manto com cauda (vaidade)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Acusações:</strong>
+                    <span>Tirania sobre os pobres, exploração, vida de prazeres, infidelidade</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Defesas:</strong>
+                    <span>Deixa quem reze por ele, é fidalgo de solar (família nobre), partiu sem aviso</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Destino:</strong>
+                    <span>Barca do Inferno</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Crítica Social:</strong>
+                    <span>Nobreza exploradora e corrompida, abuso de poder, infidelidade conjugal</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Tipos de Cómico:</strong>
+                    <span>Situação (orgulho ridículo), linguagem (ironia do Diabo)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Registo de Língua:</strong>
+                    <span>Corrente e cuidada (típico da sua classe)</span>
+                </div>
+            </div>
+
+            <!-- Onzeneiro -->
+            <div class="character-card">
+                <h3>💰 Onzeneiro</h3>
+                <span class="badge">Burguesia</span>
+                <span class="badge badge-inferno">Inferno</span>
+                
+                <div class="character-detail">
+                    <strong>Classe Social:</strong>
+                    <span>Burguesia - representa os usurários e banqueiros</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Símbolos Cénicos:</strong>
+                    <span>Bolsão/bolsa (símbolo da avareza e usura)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Acusações:</strong>
+                    <span>Usura (emprestar dinheiro a juros abusivos), ganância, amor desmedido pelo dinheiro</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Defesas:</strong>
+                    <span>A bolsa está vazia, tem muito dinheiro guardado, morreu de repente sem se preparar</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Destino:</strong>
+                    <span>Barca do Inferno</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Crítica Social:</strong>
+                    <span>Prática da usura (condenada pela Igreja), ambição desmedida, materialismo</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Tipos de Cómico:</strong>
+                    <span>Carácter (avarento), situação (apego à bolsa mesmo após a morte)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Nota Importante:</strong>
+                    <span>"Onzeneiro" vem de "onze" - emprestava dinheiro recebendo 11 por cada 10 (juro de 10%)</span>
+                </div>
+            </div>
+
+            <!-- Joane (Parvo) -->
+            <div class="character-card">
+                <h3>🤡 Joane (o Parvo)</h3>
+                <span class="badge badge-povo">Povo</span>
+                <span class="badge badge-paraiso">Paraíso</span>
+                
+                <div class="character-detail">
+                    <strong>Classe Social:</strong>
+                    <span>Povo - representa os humildes e simples</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Símbolos Cénicos:</strong>
+                    <span>Nenhum (não tem pecados, logo não tem símbolos que os representem)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Acusações:</strong>
+                    <span>Nenhuma</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Defesas:</strong>
+                    <span>Simplicidade, inocência, ausência de malícia. "Não sou marinheiro"</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Destino:</strong>
+                    <span>Barca da Glória (Paraíso)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Crítica Social:</strong>
+                    <span>Enaltecimento dos humildes e simples. Contraste com as classes privilegiadas corruptas.</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Tipos de Cómico:</strong>
+                    <span>Linguagem (expressões populares e ingénuas)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Registo de Língua:</strong>
+                    <span>Popular, vulgar, com expressões típicas do povo</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Importância:</strong>
+                    <span>Única personagem individual que se salva. Representa a inversão de valores (os últimos serão os primeiros)</span>
+                </div>
+            </div>
+
+            <!-- Sapateiro -->
+            <div class="character-card">
+                <h3>👞 Sapateiro</h3>
+                <span class="badge">Artesanato</span>
+                <span class="badge badge-inferno">Inferno</span>
+                
+                <div class="character-detail">
+                    <strong>Classe Social:</strong>
+                    <span>Artesanato - representa os comerciantes e artífices</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Símbolos Cénicos:</strong>
+                    <span>Formas (moldes de sapatos), avental, ferramentas do ofício</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Acusações:</strong>
+                    <span>Roubo, engano dos clientes, "dois mil enganos"</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Defesas:</strong>
+                    <span>Ia à missa, confessava-se, dava esmolas</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Destino:</strong>
+                    <span>Barca do Inferno</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Crítica Social:</strong>
+                    <span>Hipocrisia religiosa (pratica rituais mas engana), desonestidade no comércio</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Tipos de Cómico:</strong>
+                    <span>Situação (hipocrisia), linguagem (ironia do Diabo: "Santo sapateiro honrado")</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Recursos Expressivos:</strong>
+                    <span>Ironia, eufemismo, hipérbole ("dois mil enganos"), antítese</span>
+                </div>
+            </div>
+
+            <!-- Frade -->
+            <div class="character-card">
+                <h3>⛪ Frade</h3>
+                <span class="badge badge-clero">Clero</span>
+                <span class="badge badge-inferno">Inferno</span>
+                
+                <div class="character-detail">
+                    <strong>Classe Social:</strong>
+                    <span>Clero - representa o clero corrupto</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Símbolos Cénicos:</strong>
+                    <span>Espada, broquel (escudo), capacete, Florença (a amante)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Acusações:</strong>
+                    <span>Vida mundana, ter amante, quebra do voto de castidade, comportamento militar em vez de religioso</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Defesas:</strong>
+                    <span>Usa hábito religioso, reza salmos, outros frades fazem o mesmo</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Destino:</strong>
+                    <span>Barca do Inferno</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Crítica Social:</strong>
+                    <span>Corrupção do clero, hipocrisia religiosa, não cumprimento dos votos (pobreza, castidade, obediência)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Tipos de Cómico:</strong>
+                    <span>Situação (padre com espada e amante), carácter (incongruência entre ser e parecer)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Recursos Expressivos:</strong>
+                    <span>Ironia, antítese ("padre mundanal", "padre marido"), eufemismo</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Nota:</strong>
+                    <span>É uma das críticas mais fortes de Gil Vicente ao clero da época</span>
+                </div>
+            </div>
+
+            <!-- Alcoviteira -->
+            <div class="character-card">
+                <h3>👵 Brísida Vaz (Alcoviteira)</h3>
+                <span class="badge badge-povo">Povo</span>
+                <span class="badge badge-inferno">Inferno</span>
+                
+                <div class="character-detail">
+                    <strong>Classe Social:</strong>
+                    <span>Povo - representa as alcoviteiras e feiticeiras</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Símbolos Cénicos:</strong>
+                    <span>Seiscentos virgos postiços (falsos), arcas de feitiços, guarda-roupa</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Acusações:</strong>
+                    <span>Alcovitice (proxenetismo), prostituição, feitiçaria, mentira, engano</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Defesas:</strong>
+                    <span>Diz ser mártir, fez "coisas divinas", arranjou donos (maridos) às raparigas</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Destino:</strong>
+                    <span>Barca do Inferno</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Crítica Social:</strong>
+                    <span>Exploração sexual, superstição, prostituição. Uma das críticas sociais mais duras da obra.</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Tipos de Cómico:</strong>
+                    <span>Linguagem (calão, expressões chocantes), situação (defende-se dizendo que fazia bem)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Registo de Língua:</strong>
+                    <span>Popular e calão (linguagem muito vulgar)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Nota:</strong>
+                    <span>"Alcoviteira" = pessoa que facilita relações amorosas ilícitas, proxeneta</span>
+                </div>
+            </div>
+
+            <!-- Cavaleiros -->
+            <div class="character-card">
+                <h3>⚔️ Quatro Cavaleiros</h3>
+                <span class="badge badge-nobreza">Nobreza Militar</span>
+                <span class="badge badge-paraiso">Paraíso</span>
+                
+                <div class="character-detail">
+                    <strong>Classe Social:</strong>
+                    <span>Nobreza militar - representam os cruzados</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Símbolos Cénicos:</strong>
+                    <span>Cruz de Cristo, espadas, escudos (símbolos de fé e martírio)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Acusações:</strong>
+                    <span>Nenhuma</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Defesas:</strong>
+                    <span>Morreram pela fé cristã, lutando em África contra os mouros</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Percurso:</strong>
+                    <span>Vão diretamente para a Barca do Anjo (não passam pela do Diabo)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Destino:</strong>
+                    <span>Barca da Glória (Paraíso)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Crítica Social:</strong>
+                    <span>Enaltecimento da fé e do sacrifício. Defesa dos ideais de cruzada.</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Tipos de Cómico:</strong>
+                    <span>Nenhum (cena séria e solene)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Registo de Língua:</strong>
+                    <span>Cuidada e solene</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Importância:</strong>
+                    <span>Representam o ideal de nobreza cristã (ao contrário do Fidalgo). Salvam-se pelo martírio.</span>
+                </div>
+            </div>
+
+            <div class="exam-tip" style="margin-top: var(--space-24);">
+                <strong>Dica de Exame:</strong> Para cada personagem, deves saber identificar: classe social, símbolos cénicos, acusações, defesas e destino. É frequente pedirem comparações entre personagens!
+            </div>
+        </section>
+
+        <!-- RECURSOS EXPRESSIVOS -->
+        <section class="section" id="recursos">
+            <div class="card">
+                <h2>✨ Recursos Expressivos</h2>
+                <p>Gil Vicente utiliza diversos recursos estilísticos para tornar o texto mais expressivo e criar efeitos de sentido.</p>
+            </div>
+
+            <div class="card">
+                <h3>🎭 Ironia</h3>
+                <p><strong>Definição:</strong> Figura que consiste em dizer o contrário do que se pensa, com intenção crítica ou satírica.</p>
+                
+                <div class="resource-example">
+                    <h4>Exemplos:</h4>
+                    <ul>
+                        <li>"Ó poderoso dom Anrique" - O Diabo trata ironicamente o Fidalgo por "poderoso", mas está a ridicularizá-lo.</li>
+                        <li>"Santo sapateiro honrado" - O Diabo chama "santo" ao sapateiro que enganou tantos clientes.</li>
+                        <li>"Devoto padre" - Ironia ao referir-se ao Frade que quebrou os votos.</li>
+                    </ul>
+                </div>
+                
+                <p><strong>Valor expressivo:</strong> Permite a crítica mordaz e zombeteira. O Diabo usa constantemente a ironia para desmascarar a hipocrisia das personagens.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌸 Eufemismo</h3>
+                <p><strong>Definição:</strong> Figura que consiste em suavizar uma expressão desagradável ou ofensiva, substituindo-a por outra mais suave.</p>
+                
+                <div class="resource-example">
+                    <h4>Exemplos:</h4>
+                    <ul>
+                        <li>"Vai para a ilha perdida" - em vez de "vai para o Inferno"</li>
+                        <li>"Me deu Saturno quebranto" - em vez de "morri"</li>
+                        <li>"Lago dos danados" - em vez de "Inferno"</li>
+                    </ul>
+                </div>
+                
+                <p><strong>Valor expressivo:</strong> Atenua a dureza da condenação e da morte. Torna o discurso menos direto e mais literário.</p>
+            </div>
+
+            <div class="card">
+                <h3>🔄 Metáfora</h3>
+                <p><strong>Definição:</strong> Comparação implícita entre dois elementos, sem usar palavra comparativa (como, tal qual, etc.).</p>
+                
+                <div class="resource-example">
+                    <h4>Exemplos:</h4>
+                    <ul>
+                        <li>"Onzeneiro, meu parente" - O Diabo chama "parente" ao Onzeneiro (são ambos gananciosos)</li>
+                        <li>"Almas embaraçadas" - Almas cheias de pecados que as "embaraçam"</li>
+                        <li>"Meu amor, minhas boninas" - O Frade refere-se à amante com metáforas florais</li>
+                    </ul>
+                </div>
+                
+                <p><strong>Valor expressivo:</strong> Cria expressividade e caracteriza as personagens de forma indireta e sugestiva.</p>
+            </div>
+
+            <div class="card">
+                <h3>⚖️ Antítese</h3>
+                <p><strong>Definição:</strong> Oposição de ideias ou palavras no mesmo enunciado, criando um contraste.</p>
+                
+                <div class="resource-example">
+                    <h4>Exemplos:</h4>
+                    <ul>
+                        <li>"Comungado / Escomungado" - Contraste entre estar em graça com Deus e estar expulso da Igreja</li>
+                        <li>"Padre mundanal" - Contraste entre ser padre (espiritual) e mundano (material)</li>
+                        <li>"Padre marido" - Padre deveria ser celibatário, não marido</li>
+                    </ul>
+                </div>
+                
+                <p><strong>Valor expressivo:</strong> Realça as contradições e a hipocrisia das personagens. Mostra a incompatibilidade entre o que deviam ser e o que são.</p>
+            </div>
+
+            <div class="card">
+                <h3>📢 Hipérbole</h3>
+                <p><strong>Definição:</strong> Exagero intencional usado para intensificar uma ideia ou sentimento.</p>
+                
+                <div class="resource-example">
+                    <h4>Exemplos:</h4>
+                    <ul>
+                        <li>"Dois mil enganos" - Exagero para mostrar a quantidade de fraudes do Sapateiro</li>
+                        <li>"Seiscentos virgos postiços" - Exagero dos enganos da Alcoviteira</li>
+                    </ul>
+                </div>
+                
+                <p><strong>Valor expressivo:</strong> Amplifica a gravidade dos pecados e vícios, criando efeito cómico e crítico.</p>
+            </div>
+
+            <div class="card">
+                <h3>🔁 Repetição</h3>
+                <p><strong>Definição:</strong> Repetição intencional de palavras ou expressões.</p>
+                
+                <div class="resource-example">
+                    <h4>Exemplos:</h4>
+                    <ul>
+                        <li>O Parvo repete "Não sou marinheiro" - reforça a sua simplicidade e inocência</li>
+                        <li>Estrutura repetitiva da obra (cada personagem passa pelo mesmo processo)</li>
+                    </ul>
+                </div>
+                
+                <p><strong>Valor expressivo:</strong> Cria ritmo, reforça ideias importantes e caracteriza personagens (especialmente o Parvo).</p>
+            </div>
+
+            <div class="card">
+                <h3>↔️ Comparação</h3>
+                <p><strong>Definição:</strong> Estabelecimento explícito de uma relação de semelhança entre dois elementos, usando palavra comparativa.</p>
+                
+                <div class="resource-example">
+                    <h4>Exemplos:</h4>
+                    <ul>
+                        <li>Comparações entre as personagens e animais (para caracterizar vícios)</li>
+                        <li>Comparações entre as duas barcas e os seus destinos</li>
+                    </ul>
+                </div>
+                
+                <p><strong>Valor expressivo:</strong> Estabelece relações entre conceitos, facilitando a compreensão e a crítica.</p>
+            </div>
+
+            <div class="exam-tip">
+                <strong>Dica de Exame:</strong> Frequentemente pedem para identificares e explicares o valor expressivo de recursos. Decora os exemplos principais de cada recurso!
+            </div>
+        </section>
+
+        <!-- TEMAS -->
+        <section class="section" id="temas">
+            <div class="card">
+                <h2>💭 Temas e Valores</h2>
+            </div>
+
+            <div class="card">
+                <h3>⚖️ Crítica Social do Século XVI</h3>
+                <p>Gil Vicente utiliza o teatro para criticar duramente a sociedade portuguesa do seu tempo:</p>
+                <ul>
+                    <li>🏰 <strong>Nobreza:</strong> Tirania, exploração dos pobres, vida de luxo e ostentação</li>
+                    <li>💰 <strong>Burguesia:</strong> Ganância, usura, materialismo</li>
+                    <li>⛪ <strong>Clero:</strong> Corrupção, hipocrisia, quebra dos votos</li>
+                    <li>👔 <strong>Justiça:</strong> Corrupção, parcialidade, desonestidade</li>
+                    <li>🎭 <strong>Classes populares:</strong> Desonestidade no comércio, feitiçaria</li>
+                </ul>
+                <p class="highlight-box">Apenas os humildes (Parvo) e os que morreram pela fé (Cavaleiros) se salvam!</p>
+            </div>
+
+            <div class="card">
+                <h3>📿 Moral Cristã e Julgamento Divino</h3>
+                <p>A obra baseia-se nos valores da moral cristã medieval:</p>
+                <ul>
+                    <li>✝️ As ações em vida determinam o destino após a morte</li>
+                    <li>⚖️ A justiça divina é infalível (ao contrário da justiça terrena)</li>
+                    <li>💡 Os vícios levam à condenação</li>
+                    <li>🌟 As virtudes (fé, humildade, sacrifício) levam à salvação</li>
+                    <li>🙏 As práticas religiosas exteriores não salvam se não houver conversão interior</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>😇 Hipocrisia Religiosa</h3>
+                <p>Um dos temas mais fortes é a crítica à hipocrisia:</p>
+                <ul>
+                    <li>👞 <strong>Sapateiro:</strong> Vai à missa mas rouba os clientes</li>
+                    <li>⛪ <strong>Frade:</strong> Veste o hábito mas tem vida mundana e amante</li>
+                    <li>👑 <strong>Fidalgo:</strong> Deixa quem reze por ele mas não pratica caridade</li>
+                </ul>
+                <p class="highlight-box">A mensagem é clara: não basta parecer religioso, é preciso sê-lo verdadeiramente!</p>
+            </div>
+
+            <div class="card">
+                <h3>⚖️ Justiça Divina vs. Justiça Terrena</h3>
+                <p>Contraste entre duas formas de justiça:</p>
+                <div class="two-column">
+                    <div>
+                        <h4>Justiça Terrena</h4>
+                        <ul>
+                            <li>❌ Corrupta</li>
+                            <li>❌ Parcial</li>
+                            <li>❌ Favorece os poderosos</li>
+                            <li>❌ Pode ser enganada</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Justiça Divina</h4>
+                        <ul>
+                            <li>✅ Infalível</li>
+                            <li>✅ Imparcial</li>
+                            <li>✅ Julga todos igualmente</li>
+                            <li>✅ Vê o interior das pessoas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>💀 Vanitas (Vaidade das Coisas Terrenas)</h3>
+                <p>Tema medieval muito presente na obra:</p>
+                <ul>
+                    <li>🎪 Riquezas, poder e estatuto social não têm valor após a morte</li>
+                    <li>📦 Os símbolos cénicos (bagagem) representam os pecados que "pesam" na alma</li>
+                    <li>⏰ A morte chega sem aviso e iguala todos</li>
+                    <li>✨ Apenas os atos virtuosos têm valor eterno</li>
+                </ul>
+                <div class="resource-example">
+                    <p><em>"A morte é o grande igualador social"</em> - Todos são julgados da mesma forma, independentemente da classe social.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🔄 Inversão de Valores</h3>
+                <p>Gil Vicente inverte a hierarquia social do século XVI:</p>
+                <ul>
+                    <li>👑 Os poderosos (Fidalgo) vão para o Inferno</li>
+                    <li>🤡 Os humildes (Parvo) vão para o Paraíso</li>
+                    <li>⛪ O Clero corrupto é condenado</li>
+                    <li>⚔️ Os guerreiros da fé são exaltados</li>
+                </ul>
+                <p class="highlight-box">Mensagem evangélica: "Os últimos serão os primeiros"</p>
+            </div>
+
+            <div class="exam-tip">
+                <strong>Dica de Exame:</strong> Prepara-te para relacionar temas com personagens específicas. Por exemplo: "Como é criticada a hipocrisia religiosa através do Frade e do Sapateiro?"
+            </div>
+        </section>
+
+        <!-- EXERCÍCIOS -->
+        <section class="section" id="exercicios">
+            <div class="card">
+                <h2>📝 Exercícios Interativos</h2>
+                <p>Testa os teus conhecimentos com estes exercícios!</p>
+            </div>
+
+            <!-- Quiz 1 -->
+            <div class="quiz-question">
+                <h4>1. Qual é a única personagem individual que entra na Barca da Glória?</h4>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 0)">Fidalgo</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 0)">Sapateiro</div>
+                    <div class="quiz-option" data-correct="true" onclick="checkAnswer(this, 0)">Joane (o Parvo)</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 0)">Frade</div>
+                </div>
+                <div class="feedback" id="feedback0" style="display: none;"></div>
+            </div>
+
+            <!-- Quiz 2 -->
+            <div class="quiz-question">
+                <h4>2. O que simboliza o bolsão do Onzeneiro?</h4>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 1)">Generosidade</div>
+                    <div class="quiz-option" data-correct="true" onclick="checkAnswer(this, 1)">Avareza e usura</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 1)">Pobreza</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 1)">Honestidade</div>
+                </div>
+                <div class="feedback" id="feedback1" style="display: none;"></div>
+            </div>
+
+            <!-- Quiz 3 -->
+            <div class="quiz-question">
+                <h4>3. Que recurso expressivo está presente em "Santo sapateiro honrado"?</h4>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 2)">Metáfora</div>
+                    <div class="quiz-option" data-correct="true" onclick="checkAnswer(this, 2)">Ironia</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 2)">Eufemismo</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 2)">Hipérbole</div>
+                </div>
+                <div class="feedback" id="feedback2" style="display: none;"></div>
+            </div>
+
+            <!-- Quiz 4 -->
+            <div class="quiz-question">
+                <h4>4. Qual é a classe social do Fidalgo?</h4>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-correct="true" onclick="checkAnswer(this, 3)">Nobreza</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 3)">Clero</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 3)">Povo</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 3)">Burguesia</div>
+                </div>
+                <div class="feedback" id="feedback3" style="display: none;"></div>
+            </div>
+
+            <!-- Quiz 5 -->
+            <div class="quiz-question">
+                <h4>5. O Frade é condenado por:</h4>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 4)">Ser muito religioso</div>
+                    <div class="quiz-option" data-correct="true" onclick="checkAnswer(this, 4)">Vida mundana e quebra dos votos</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 4)">Ser pobre</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 4)">Ajudar os outros</div>
+                </div>
+                <div class="feedback" id="feedback4" style="display: none;"></div>
+            </div>
+
+            <!-- Quiz 6 -->
+            <div class="quiz-question">
+                <h4>6. Que personagens vão diretamente para a Barca da Glória sem passar pela do Inferno?</h4>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 5)">Fidalgo e Onzeneiro</div>
+                    <div class="quiz-option" data-correct="true" onclick="checkAnswer(this, 5)">Os Quatro Cavaleiros</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 5)">Frade e Sapateiro</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 5)">Todas as personagens</div>
+                </div>
+                <div class="feedback" id="feedback5" style="display: none;"></div>
+            </div>
+
+            <!-- Quiz 7 -->
+            <div class="quiz-question">
+                <h4>7. "Vai para a ilha perdida" é um exemplo de:</h4>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-correct="true" onclick="checkAnswer(this, 6)">Eufemismo</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 6)">Ironia</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 6)">Metáfora</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 6)">Antítese</div>
+                </div>
+                <div class="feedback" id="feedback6" style="display: none;"></div>
+            </div>
+
+            <!-- Quiz 8 -->
+            <div class="quiz-question">
+                <h4>8. A obra foi representada no reinado de:</h4>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-correct="true" onclick="checkAnswer(this, 7)">D. Manuel I</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 7)">D. João II</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 7)">D. Afonso Henriques</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 7)">D. Sebastião</div>
+                </div>
+                <div class="feedback" id="feedback7" style="display: none;"></div>
+            </div>
+
+            <!-- Quiz 9 -->
+            <div class="quiz-question">
+                <h4>9. O tema central da obra é:</h4>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 8)">O amor impossível</div>
+                    <div class="quiz-option" data-correct="true" onclick="checkAnswer(this, 8)">O julgamento da alma e a justiça divina</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 8)">As descobertas marítimas</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 8)">A vida na corte</div>
+                </div>
+                <div class="feedback" id="feedback8" style="display: none;"></div>
+            </div>
+
+            <!-- Quiz 10 -->
+            <div class="quiz-question">
+                <h4>10. A Alcoviteira traz como símbolo cénico:</h4>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 9)">Uma espada</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 9)">Uma bolsa</div>
+                    <div class="quiz-option" data-correct="true" onclick="checkAnswer(this, 9)">Virgos postiços e arcas de feitiços</div>
+                    <div class="quiz-option" data-correct="false" onclick="checkAnswer(this, 9)">Nenhum símbolo</div>
+                </div>
+                <div class="feedback" id="feedback9" style="display: none;"></div>
+            </div>
+
+            <div class="card" style="margin-top: var(--space-24);">
+                <h3>Pontuação</h3>
+                <p>Acertaste <span id="score" style="color: var(--color-primary); font-weight: bold;">0</span> de 10 questões.</p>
+                <button class="btn btn--primary" onclick="resetQuiz()">🔄 Recomeçar Quiz</button>
+            </div>
+        </section>
+
+        <!-- SÍNTESE -->
+        <section class="section" id="sintese">
+            <div class="card">
+                <h2>📊 Quadros Síntese</h2>
+                <p>Consulta estes quadros para revisões rápidas!</p>
+            </div>
+
+            <div class="card">
+                <h3>Personagens e Destinos</h3>
+                <table class="summary-table">
+                    <thead>
+                        <tr>
+                            <th>Personagem</th>
+                            <th>Classe Social</th>
+                            <th>Símbolo Cénico</th>
+                            <th>Destino</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fidalgo</td>
+                            <td>Nobreza</td>
+                            <td>Pajem, cadeira</td>
+                            <td>🔥 Inferno</td>
+                        </tr>
+                        <tr>
+                            <td>Onzeneiro</td>
+                            <td>Burguesia</td>
+                            <td>Bolsão</td>
+                            <td>🔥 Inferno</td>
+                        </tr>
+                        <tr>
+                            <td>Joane (Parvo)</td>
+                            <td>Povo</td>
+                            <td>Nenhum</td>
+                            <td>☁️ Paraíso</td>
+                        </tr>
+                        <tr>
+                            <td>Sapateiro</td>
+                            <td>Artesanato</td>
+                            <td>Formas, avental</td>
+                            <td>🔥 Inferno</td>
+                        </tr>
+                        <tr>
+                            <td>Frade</td>
+                            <td>Clero</td>
+                            <td>Espada, Florença</td>
+                            <td>🔥 Inferno</td>
+                        </tr>
+                        <tr>
+                            <td>Alcoviteira</td>
+                            <td>Povo</td>
+                            <td>Virgos postiços</td>
+                            <td>🔥 Inferno</td>
+                        </tr>
+                        <tr>
+                            <td>Quatro Cavaleiros</td>
+                            <td>Nobreza Militar</td>
+                            <td>Cruz de Cristo</td>
+                            <td>☁️ Paraíso</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>Críticas Sociais por Personagem</h3>
+                <table class="summary-table">
+                    <thead>
+                        <tr>
+                            <th>Personagem</th>
+                            <th>Crítica Social</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Fidalgo</strong></td>
+                            <td>Tirania, exploração dos pobres, vaidade</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Onzeneiro</strong></td>
+                            <td>Usura, ganância, materialismo</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sapateiro</strong></td>
+                            <td>Hipocrisia religiosa, engano no comércio</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Frade</strong></td>
+                            <td>Corrupção do clero, quebra dos votos</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Alcoviteira</strong></td>
+                            <td>Prostituição, feitiçaria, exploração sexual</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Joane</strong></td>
+                            <td>Enaltecimento dos humildes e simples</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cavaleiros</strong></td>
+                            <td>Exaltação da fé e do martírio</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>Recursos Expressivos - Resumo</h3>
+                <div class="character-detail">
+                    <strong>Ironia:</strong>
+                    <span>Dizer o contrário do que se pensa (crítica satírica)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Eufemismo:</strong>
+                    <span>Suavizar expressões desagradáveis</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Metáfora:</strong>
+                    <span>Comparação implícita entre elementos</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Antítese:</strong>
+                    <span>Oposição de ideias (mostra contradições)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Hipérbole:</strong>
+                    <span>Exagero para intensificar uma ideia</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Repetição:</strong>
+                    <span>Reforço de ideias através da repetição</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Temas Principais</h3>
+                <ul>
+                    <li>⚖️ <strong>Justiça divina:</strong> Julgamento das almas após a morte</li>
+                    <li>📢 <strong>Crítica social:</strong> Denúncia dos vícios de todas as classes</li>
+                    <li>😇 <strong>Hipocrisia religiosa:</strong> Aparentar religiosidade sem o ser</li>
+                    <li>💰 <strong>Vanitas:</strong> Vaidade das riquezas terrenas</li>
+                    <li>🔄 <strong>Inversão social:</strong> Os humildes salvam-se, os poderosos condenam-se</li>
+                    <li>⛪ <strong>Moral cristã:</strong> Atos em vida determinam destino eterno</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Estrutura da Obra - Esquema</h3>
+                <div style="background: var(--color-bg-8); padding: var(--space-20); border-radius: var(--radius-base);">
+                    <p><strong>Espaço:</strong> Cais alegórico (duas barcas)</p>
+                    <p><strong>Tempo:</strong> Atemporal (momento da morte)</p>
+                    <p><strong>Ação:</strong> Sucessão de cenas de julgamento</p>
+                    <p><strong>Estrutura repetitiva:</strong></p>
+                    <ol>
+                        <li>Chegada da personagem</li>
+                        <li>Diálogo com o Diabo</li>
+                        <li>Diálogo com o Anjo</li>
+                        <li>Julgamento</li>
+                        <li>Destino (Inferno ou Paraíso)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXAME -->
+        <section class="section" id="exame">
+            <div class="card">
+                <h2>🎓 Preparação para o Exame</h2>
+                <p>Dicas, estratégias e questões típicas de exame.</p>
+            </div>
+
+            <div class="card">
+                <h3>📋 Checklist de Estudo</h3>
+                <ul class="checklist" id="checklist">
+                    <li onclick="toggleCheck(this)">Conheço a biografia de Gil Vicente e o contexto histórico</li>
+                    <li onclick="toggleCheck(this)">Sei identificar o género literário (auto de moralidade)</li>
+                    <li onclick="toggleCheck(this)">Conheço a estrutura da obra e a sua intenção moralizadora</li>
+                    <li onclick="toggleCheck(this)">Sei caracterizar todas as personagens principais</li>
+                    <li onclick="toggleCheck(this)">Identifico os símbolos cénicos de cada personagem</li>
+                    <li onclick="toggleCheck(this)">Conheço os destinos de cada personagem e as razões</li>
+                    <li onclick="toggleCheck(this)">Sei identificar recursos expressivos (ironia, eufemismo, etc.)</li>
+                    <li onclick="toggleCheck(this)">Compreendo os temas principais da obra</li>
+                    <li onclick="toggleCheck(this)">Sei explicar a crítica social presente na obra</li>
+                    <li onclick="toggleCheck(this)">Consigo relacionar personagens e compará-las</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>💡 Dicas para o Exame</h3>
+                <div class="exam-tip">
+                    <strong>1. Lê atentamente o excerto</strong><br>
+                    Identifica qual a personagem em cena, que símbolos traz e qual o momento da ação.
+                </div>
+                <div class="exam-tip">
+                    <strong>2. Identifica recursos expressivos</strong><br>
+                    Procura ironias, eufemismos, antíteses. Explica sempre o valor expressivo.
+                </div>
+                <div class="exam-tip">
+                    <strong>3. Relaciona com a crítica social</strong><br>
+                    Cada personagem representa uma crítica. Mostra que compreendes isso.
+                </div>
+                <div class="exam-tip">
+                    <strong>4. Cita o texto</strong><br>
+                    Sempre que possível, usa citações do texto para fundamentar as tuas respostas.
+                </div>
+                <div class="exam-tip">
+                    <strong>5. Estrutura bem a resposta</strong><br>
+                    Introdução breve, desenvolvimento (com exemplos) e conclusão.
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📝 Questões Típicas de Exame</h3>
+                
+                <div class="highlight-box">
+                    <h4>Tipo 1: Caracterização de Personagens</h4>
+                    <p><strong>Exemplo:</strong> "Caracteriza o Fidalgo, tendo em conta os símbolos cénicos que o acompanham."</p>
+                    <p><strong>Como responder:</strong></p>
+                    <ul>
+                        <li>Indica a classe social</li>
+                        <li>Menciona os símbolos (pajem, cadeira, manto)</li>
+                        <li>Explica o que simbolizam (vaidade, ostentação, poder)</li>
+                        <li>Refere as acusações do Diabo</li>
+                        <li>Conclui com o destino e a crítica social</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Tipo 2: Identificação de Recursos</h4>
+                    <p><strong>Exemplo:</strong> "Identifica e explica o valor expressivo da ironia em 'Santo sapateiro honrado'."</p>
+                    <p><strong>Como responder:</strong></p>
+                    <ul>
+                        <li>Define ironia (dizer o contrário do que se pensa)</li>
+                        <li>Explica que o Sapateiro não é santo nem honrado</li>
+                        <li>Refere os seus pecados (engano, roubo)</li>
+                        <li>Conclui com o valor expressivo (crítica mordaz)</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Tipo 3: Crítica Social</h4>
+                    <p><strong>Exemplo:</strong> "Como é criticado o clero através da personagem do Frade?"</p>
+                    <p><strong>Como responder:</strong></p>
+                    <ul>
+                        <li>Refere a quebra dos votos (castidade, pobreza)</li>
+                        <li>Menciona os símbolos (espada, Florença)</li>
+                        <li>Explica a contradição (padre mas vida mundana)</li>
+                        <li>Identifica recursos (antítese: "padre marido")</li>
+                        <li>Conclui com a mensagem de Gil Vicente</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Tipo 4: Comparação entre Personagens</h4>
+                    <p><strong>Exemplo:</strong> "Compara o destino do Fidalgo com o do Parvo."</p>
+                    <p><strong>Como responder:</strong></p>
+                    <ul>
+                        <li>Fidalgo: nobreza, símbolos de poder, tirania → Inferno</li>
+                        <li>Parvo: povo, sem símbolos, simplicidade → Paraíso</li>
+                        <li>Explica a inversão de valores</li>
+                        <li>Refere a mensagem cristã (os últimos serão os primeiros)</li>
+                    </ul>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Tipo 5: Temas da Obra</h4>
+                    <p><strong>Exemplo:</strong> "Explica como se manifesta o tema da hipocrisia religiosa na obra."</p>
+                    <p><strong>Como responder:</strong></p>
+                    <ul>
+                        <li>Define hipocrisia (aparentar ser religioso sem o ser)</li>
+                        <li>Dá exemplos: Sapateiro (vai à missa mas rouba), Frade (hábito mas vida mundana)</li>
+                        <li>Explica a crítica de Gil Vicente</li>
+                        <li>Conclui com a mensagem moral</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🎯 Questões de Desenvolvimento</h3>
+                <p>Treina com estas questões abertas:</p>
+                <ol>
+                    <li>Explica por que razão o Parvo é a única personagem individual que entra na Barca da Glória.</li>
+                    <li>Comenta a importância dos símbolos cénicos para a caracterização das personagens.</li>
+                    <li>Relaciona a obra com o contexto histórico do século XVI português.</li>
+                    <li>Analisa a forma como Gil Vicente critica a sociedade do seu tempo.</li>
+                    <li>Explica o significado da alegoria das duas barcas.</li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h3>📖 Glossário de Termos Importantes</h3>
+                <div class="character-detail">
+                    <strong>Auto:</strong>
+                    <span>Peça de teatro breve, típica da literatura medieval</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Auto de moralidade:</strong>
+                    <span>Subgénero que visa ensinar valores morais</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Alegoria:</strong>
+                    <span>Representação concreta de ideias abstratas</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Onzeneiro:</strong>
+                    <span>Usurário (emprestava dinheiro a juros abusivos)</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Alcoviteira:</strong>
+                    <span>Pessoa que facilita relações amorosas ilícitas; proxeneta</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Vanitas:</strong>
+                    <span>Conceito medieval da vaidade das coisas terrenas</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Redondilha maior:</strong>
+                    <span>Verso de sete sílabas métricas</span>
+                </div>
+                <div class="character-detail">
+                    <strong>Arrais:</strong>
+                    <span>Capitão ou comandante de uma embarcação</span>
+                </div>
+            </div>
+        </section>
+
+        <button class="scrolltop-btn" id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+    </div>
+
+    <script>
+        // Navigation
+        let score = 0;
+        const answered = new Array(10).fill(false);
+        
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                const targetSection = this.dataset.section;
+                
+                // Update active tab
+                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Update active section
+                document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+                document.getElementById(targetSection).classList.add('active');
+                
+                // Update progress
+                updateProgress();
+                
+                // Scroll to top
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
+        });
+
+        // Progress bar
+        function updateProgress() {
+            const totalTabs = document.querySelectorAll('.nav-tab').length;
+            const activeIndex = Array.from(document.querySelectorAll('.nav-tab')).findIndex(tab => tab.classList.contains('active'));
+            const progress = ((activeIndex + 1) / totalTabs) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        }
+
+        // Quiz functionality
+        function checkAnswer(element, questionIndex) {
+            if (answered[questionIndex]) return; // Already answered
+            
+            const isCorrect = element.dataset.correct === 'true';
+            const feedback = document.getElementById('feedback' + questionIndex);
+            const options = element.parentElement.children;
+            
+            // Disable all options
+            Array.from(options).forEach(opt => {
+                if (opt.classList.contains('quiz-option')) {
+                    opt.style.cursor = 'not-allowed';
+                    if (opt.dataset.correct === 'true') {
+                        opt.classList.add('correct');
+                    }
+                }
+            });
+            
+            if (!isCorrect) {
+                element.classList.add('incorrect');
+            }
+            
+            // Show feedback
+            feedback.style.display = 'block';
+            if (isCorrect) {
+                feedback.className = 'feedback correct';
+                feedback.textContent = '✓ Correto! Muito bem!';
+                score++;
+            } else {
+                feedback.className = 'feedback incorrect';
+                feedback.textContent = '✗ Incorreto. Revê a matéria e tenta novamente!';
+            }
+            
+            answered[questionIndex] = true;
+            document.getElementById('score').textContent = score;
+        }
+
+        function resetQuiz() {
+            score = 0;
+            answered.fill(false);
+            
+            document.querySelectorAll('.quiz-option').forEach(option => {
+                option.classList.remove('correct', 'incorrect');
+                option.style.cursor = 'pointer';
+            });
+            
+            document.querySelectorAll('.feedback').forEach(feedback => {
+                feedback.style.display = 'none';
+            });
+            
+            document.getElementById('score').textContent = '0';
+        }
+
+        // Checklist functionality
+        function toggleCheck(element) {
+            element.classList.toggle('checked');
+        }
+
+        // Scroll to top button
+        window.addEventListener('scroll', function() {
+            const scrollTopBtn = document.getElementById('scrollTopBtn');
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        // Initialize
+        updateProgress();
+    </script>
+</body>
+</html>
